@@ -1,0 +1,27 @@
+<html>
+    <body>
+        <style>
+            .button{
+                text-align: center;
+                margin-top: 10;
+                background-color: red;
+            }
+            .animation{
+                background-color: aqua;
+            }
+        </style>
+        <div class="button" >
+            <button>Botao</button>
+        </div>
+        <script>
+        
+            var botao = document.querySelectorAll('.button')[0];
+            
+            botao.addEventListener('click', ()=>{
+                botao.classList.add('animation');
+            })
+            
+        </script>    
+    </body>
+    
+</html>

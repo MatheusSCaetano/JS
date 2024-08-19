@@ -1,0 +1,64 @@
+<html>
+
+<body>
+    <style>
+        .conteudo h1 span {
+            font-size: 13px;
+            cursor: pointer;
+        }
+
+        .conteudo p {
+            height: 10px;
+            overflow: hidden;
+        }
+        .mostrar{
+            height: 200px !important;
+        }
+    </style>
+    <div class="conteudo">
+        <h1>Texto <span>Ver mais!</span></h1>
+        <p>conjunto das palavras escritas, em livro, folheto, documento etc. (p.opos. a comentários, aditamentos,
+            sumário etc.); redação original de qualquer obra escrita.
+            "um t. manuscrito"
+            2.
+            trecho ou fragmento de obra de um autor.
+            "o t. de Graciliano Ramos"conjunto das palavras escritas, em livro, folheto, documento etc. (p.opos. a
+            comentários, aditamentos, sumário etc.); redação original de qualquer obra escrita.
+            "um t. manuscrito"
+            2.
+            trecho ou fragmento de obra de um autor.
+            "o t. de Graciliano Ramos"conjunto das palavras escritas, em livro, folheto, documento etc. (p.opos. a
+            comentários, aditamentos, sumário etc.); redação original de qualquer obra escrita.
+            "um t. manuscrito"
+            2.
+            trecho ou fragmento de obra de um autor.
+            "o t. de Graciliano Ramos"conjunto das palavras escritas, em livro, folheto, documento etc. (p.opos. a
+            comentários, aditamentos, sumário etc.); redação original de qualquer obra escrita.
+            "um t. manuscrito"
+            2.
+            trecho ou fragmento de obra de um autor.
+            "o t. de Graciliano Ramos"conjunto das palavras escritas, em livro, folheto, documento etc. (p.opos. a
+            comentários, aditamentos, sumário etc.); redação original de qualquer obra escrita.
+            "um t. manuscrito"
+            2.
+            trecho ou fragmento de obra de um autor.
+            "o t. de Graciliano Ramos"
+        </p>
+    </div>
+    <script>
+        document.querySelector('.conteudo span').addEventListener('click', () => {
+            var conteudo = document.querySelector('.conteudo p');
+            var span = document.querySelector('.conteudo span');
+
+            if(conteudo.classList.contains('mostrar')){
+                span.innerHTML = 'Ver mais!'
+                conteudo.classList.remove('mostrar');
+            }else{
+                span.innerHTML = 'Ver menos!'
+                conteudo.classList.add('mostrar');
+            }
+        });
+    </script>
+</body>
+
+</html>
