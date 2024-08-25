@@ -1,0 +1,35 @@
+<html>
+    <body>
+        <script>
+            setTimeout(function(){
+                alert('bolsa');
+            },2000)
+                
+            //chamar obj Xml
+            var request = new XMLHttpRequest();
+            //fazer o request open
+            request.open('GET','https://jsonplaceholder.typicode.com/todos/1' ,true);
+
+            //fazer verificacao de status como o request.onload()
+
+            // P/ fazero onload();
+            request.onload = function(){
+                if(this.status >= 200 && this.status < 400){
+                    //request ok => fazer chamada
+                    var data = JSON.parse(this.response);
+                    console.log(data);
+                }else{
+                    alert('Error: 400')
+                }
+            }
+            //fazer o onerror();
+
+            request.onerror = function(){
+
+            }
+
+          //chamar o requesy.send();
+          request.send();
+        </script>
+    </body>
+</html>
